@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+    - async y defer descargan el script en un hilo separado mientras el resto de la página está está descargando.
+    Así la carga de la página no es bloqueda durante el proceso de carga del script.
+    - Los scripts con un atributo async se ejecutarán tan pronto como la descarga esté completa.
+    Esto bloquea la página y no garantiza ninguna orden de ejecución específica.
+    - Los scripts con un atributo defer se cargarán en el orden en que están
+    y sólo se ejecutarán una vez que la página completa haya terminado de cargar.
+    - Si sus scripts deben ejecutarse inmediatamente y no tienen dependencias, entonces use async.
+    - Si el script depende del DOM y/o de otras dependencias use defer
+    -->
+    <script async src="imprimir_texto.js"></script>
+</head>
+<body>
+    
+</body>
+</html>
